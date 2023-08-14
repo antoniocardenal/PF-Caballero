@@ -4,59 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardinal</title>
-    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="favicon" type="image/png" href="../images/favicon.png">
+    <script src="../js/bootstrap.min.js"></script> <!--JS Bootstrap local-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!--CSS Bootstrap local-->
+    <link rel="stylesheet" href="../css/styles.scss">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Estudio de diseño con alcance global especializado en construcciones de marca, desarrollo de sistemas de comunicación visual y desarrollo web.">
+    <meta name="keywords" content="Diseño gráfico, Fotografía, Diseño web, MX, Yucatán, Proyecto, Freelance, Branding, Marcas, Sitio Web">
 </head>
+
 <body>
     <header>
-        <div class="header">
-            <div class="logo">Cardenal</div>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/nosotros.html">Nosotros</a>
-                <a href="../pages/proyectos.html">Proyectos</a>
-                <a href="../pages/playground.html">Playground</a>
-                <a href="../pages/contacto.html">Contacto</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../images/Cardinal.png" alt=""></a>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./playground.html">Playground</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <h1>¡Trabajemos juntos!</h1>
-    <h2>¡Gracias por el interés!</h2>
-    
-    <p>Utiliza este formulario para poder ponerte en contacto nosotros <br/>
-        para ayudarte con lo que necesites y esté en mis manos.
-    </p>
+    <main>
+        <div class="contacto container-fluid-lg col-xg-12"  >
+            <div class="formulario col-xg-6">
+                <h1>¡Trabajemos juntos!</h1>
+                <h2>¡Gracias por el interés!</h2>
+            
+                <p>Utiliza este formulario para poder ponerte en contacto nosotros <br/>
+                    para ayudarte con lo que necesites y esté en mis manos.
+                </p>
 
-    <form action="">
-        <label for="nombre">Nombre Completo</label>
-                <input type="text" name="nombre" id="nombre">
+                <form action="">
+                    <label for="nombre">Nombre Completo</label>
+                            <input type="text" name="nombre" id="nombre">
 
-        <label for="tel">Teléfono de contacto</label>
-                <input type="tel" name="telefono" id="telefono">
-       
-        <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                    <label for="tel">Teléfono de contacto</label>
+                            <input type="tel" name="telefono" id="telefono">
+            
+                    <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
 
-        <label for="ayuda">¿En qué puedo ayudarte?</label>
-                <select name="ayuda" id="ayuda">
-                    <option value="branding">Branding</option>
-                    <option value="fotografia">Fotografía de Retrato</option>
-                    <option value="disenio">Diseño Gráfico</option>
-                    <option value="web">Diseño Web</option>
-                    <option value="otro">Otro</option>
-                </select>
+                    <label for="ayuda">¿En qué puedo ayudarte?</label>
+                            <select name="ayuda" id="ayuda">
+                                <option value="branding">Branding</option>
+                                <option value="fotografia">Fotografía de Retrato</option>
+                                <option value="disenio">Diseño Gráfico</option>
+                                <option value="web">Diseño Web</option>
+                                <option value="otro">Otro</option>
+                            </select>
 
-        <label for="mensaje"></label>
-                <textarea name="mensaje" id="mesaje" cols="30" rows="10"></textarea>
-        <input type="button" value="¡Listo!">
-    </form>
+                    <label for="mensaje"></label>
+                            <textarea name="mensaje" id="mesaje" cols="30" rows="10"></textarea>
+                    <input type="button" value="¡Listo!">
 
-    <hr>
-    <footer>
-        <p id="copyright">© MX / 2018 - 2023</p>
-        <p id="copyright">Cardenal</p>
-        <a target="_blank" href="https://www.instagram.com/"><img src="../images/instagram.png" alt="instagram" width="3%"></a>
-        <a target="_blank" href="https://open.spotify.com/"><img src="../images/spotify.png" alt="spotify" width="3%"></a>
-    </footer>
+                </form>
+            </div>    
+        </div>
+    </main>
+
+    <div class="container-fluid-lg">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark" data-bs-theme="dark">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Cardinal © MX 2023</span>
+            </div>
+      
+            <ul class="col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img src="../images/instagram.png" class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://open.spotify.com/"><img src="../images/spotify.png" class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3">
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

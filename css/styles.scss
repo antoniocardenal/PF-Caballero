@@ -20,16 +20,15 @@
 .contacto{
     width: 100%;
     background-color: #42E3FF;
+    .formulario{
+        border: 1px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+        margin: 30%;
+    }
 }
 
-
-.formulario{
-    border: 1px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: white;
-    margin: 30%;
-}
 
 .newsletter{
     font-family: 'Darker Grotesque', sans-serif;
@@ -43,8 +42,4 @@
 .servicio{
     text-align: center;
     margin: 2rem;
-}
-
-.playground{
-    align-items: center;
 }
